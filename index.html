@@ -15,11 +15,47 @@
 
     <section class="gallery">
         <h3>My Projects</h3>
+
+        <label for="filter">Filter by Tag:</label>
+        <select id="filter">
+            <!--values cannot have a space-->
+            <option value="all">All</option>
+            <option value="Data">Data Analysis</option>
+            <option value="GIS">GIS</option>
+            <option value="Python">Python</option>
+        </select>    
+
         <div class="thumbnails">
-            <a href="project1.html" class="thumbnail"><img src="project1-thumbnail.jpg" alt="Project 1"></a>
-            <a href="project2.html" class="thumbnail"><img src="project2-thumbnail.jpg" alt="Project 2"></a>
-            <!-- Add more project thumbnails here -->
+            <a href="https://dbc-gym.streamlit.app/" target="_blank" class="thumbnail" data-tags="Data Python">
+                <div class="thumbnail-container">
+                    <img src="images/gym-dashboard.png" alt="Gym Dashboard">
+                    <div class="overlay-text">Gym Dashboard</div>
+                </div>
+            </a>
+            <a href="https://pittsburghpa.maps.arcgis.com/apps/instant/basic/index.html?appid=ca33322ae91b4945af942ef01290180b" target="_blank" class="thumbnail" data-tags="GIS">
+                <div class="thumbnail-container">
+                    <img src="images/street-owner.png" alt="Street Ownership Map">
+                    <div class="overlay-text">Street Ownership Map</div>
+                </div>
+            </a>
         </div>
     </section>
 </body>
 </html>
+
+<script>
+    document.getElementById("filter").addEventListener("change", function() {
+        let selectedTag = this.value;
+        let projects = document.querySelectorAll(".thumbnail");
+    
+        projects.forEach(project => {
+            let tags = project.getAttribute("data-tags").split(" ");
+            if (selectedTag === "all" || tags.includes(selectedTag)) {
+                project.style.display = "inline-block";
+            } else {
+                project.style.display = "none";
+            }
+        });
+    });
+    </script>
+    
