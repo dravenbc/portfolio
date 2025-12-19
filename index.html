@@ -10,24 +10,28 @@
     <header class="title-card">
         <h1>DRAVEN BECHTEL-CLARK</h1>
         <h2>GIS & Data Analysis Portfolio</h2>
-        <p><b>Geographic Information Systems Analyst skilled in the Esri ArcGIS suite,<br>with a focus on automation using Python libraries such as ArcPy and Pandas.</b></p>
+        <p><b>Geographic Information Systems Analyst skilled in the Esri ArcGIS suite, Python, and Leaflet.<br>I am interested in building open source web maps with automated data pipelines.</b></p>
     </header>
 
     <section class="gallery">
         <h3>My Projects</h3>
 
-        <label for="filter">Filter by Tag:</label>
-        <select id="filter">
+        <div class="filter-row">
+            <label for="filter">Filter by Tag:</label>
+            <select id="filter">
             <!--values cannot have a space-->
             <option value="all">All</option>
-            <option value="Data">Data Analysis</option>
+            <option value="ArcGIS">ArcGIS</option>
+            <option value="AWS">AWS</option>
             <option value="GIS">GIS</option>
+            <option value="Leaflet">Leaflet</option>
             <option value="Python">Python</option>
-        </select>    
+            </select>
+        </div>
 
         <div class="thumbnails">
             <!--food reporter-->
-            <a href="https://dravenbc.github.io/food-reporter" target="_blank" class="thumbnail" data-tags="GIS Python">
+            <a href="https://dravenbc.github.io/food-reporter" target="_blank" class="thumbnail" data-tags="GIS Python Leaflet">
                 <div class="thumbnail-container">
                     <img src="images/food-reporter-bug.png" alt="Food Reporter">
                     <div class="overlay-text">Food Reporter</div> 
@@ -36,7 +40,7 @@
             </a>
 
             <!--street ownership map-->
-            <a href="https://pittsburghpa.maps.arcgis.com/apps/instant/basic/index.html?appid=ca33322ae91b4945af942ef01290180b" target="_blank" class="thumbnail" data-tags="GIS">
+            <a href="https://pittsburghpa.maps.arcgis.com/apps/instant/basic/index.html?appid=ca33322ae91b4945af942ef01290180b" target="_blank" class="thumbnail" data-tags="GIS ArcGIS">
                 <div class="thumbnail-container">
                     <img src="images/street-owner.png" alt="Street Ownership Map">
                     <div class="overlay-text">Street Ownership Map</div>
@@ -44,13 +48,13 @@
                 <div class="thumbnail-caption">A web map showing the owner of each street in Pittsburgh.</div>
             </a>
 
-            <!--real estate dashboard-->
-            <a href="https://www.arcgis.com/apps/dashboards/f26bbb83ecc34d379dd07220bc5428fc" target="_blank" class="thumbnail" data-tags="GIS">
+            <!--submarine map-->
+            <a href="http://sunkensubs.s3-website.us-east-2.amazonaws.com/" target="_blank" class="thumbnail" data-tags="GIS Leaflet AWS">
                 <div class="thumbnail-container">
-                    <img src="images/real-estate-dashboard.jpg" alt="Residential Real Estate Dashboard">
-                    <div class="overlay-text">Residential Real Estate Dashboard</div>
+                    <img src="images/SubsMap.jpg" alt="Nuclear Submarine Sinkings Map">
+                    <div class="overlay-text">Nuclear Submarine Sinkings Map</div>
                 </div>
-                <div class="thumbnail-caption">A dynamic dashboard showing residential real estate analytics for Pittsburgh City Council District 4.</div>
+                <div class="thumbnail-caption">A web map showing the locations of nuclear submarine sinkings around the world. Fully open source.</div>
             </a>
 
             <!--solar suitability map-->
@@ -63,6 +67,14 @@
             </a>
         </div>
     </section>
+
+    <footer class="site-footer">
+        <div class="footer-row">
+            <a href="https://github.com/dravenbc" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/draven-bechtel-clark-30b633176" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </footer>
+
 </body>
 </html>
 
@@ -80,5 +92,5 @@
             }
         });
     });
-    </script>
+</script>
     

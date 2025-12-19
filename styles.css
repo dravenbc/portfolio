@@ -42,7 +42,7 @@ body {
 }
 
 .gallery {
-    padding: 50px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -132,14 +132,26 @@ body {
     opacity: 1;
 }
 
-label[for="filter"] {
-    display: block; /* Makes label take full width */
-    margin-bottom: 8px; /* Adjust the space */
+select {
+    margin-bottom: 0;
 }
 
-select {
-    
-    margin-bottom: 50px; /* Adds space below */
+/* Flex row for filter controls */
+.filter-row {
+    display: flex;
+    align-items: center; /* vertically center label and select */
+    justify-content: center; /* keep centered in the .gallery */
+    gap: 10px;
+    margin-bottom: 50px; /* space below the controls */
+}
+
+.filter-row label {
+    display: inline-block;
+    margin: 0;
+}
+
+.filter-row select {
+    vertical-align: middle;
 }
 
 .thumbnail-caption {
@@ -148,6 +160,26 @@ select {
     padding: 20px;
     text-decoration: none;
     color: black
+}
+
+/* Footer styles */
+.site-footer {
+    background: transparent;
+    padding: 20px 0 40px;
+}
+.footer-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* align links vertically */
+}
+.site-footer a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+.site-footer a:hover {
+    text-decoration: underline;
 }
 
 
