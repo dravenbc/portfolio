@@ -25,18 +25,28 @@
             <option value="AWS">AWS</option>
             <option value="GIS">GIS</option>
             <option value="Leaflet">Leaflet</option>
+            <option value="PostgreSQL/PostGIS">PostgreSQL/PostGIS</option>
             <option value="Python">Python</option>
             </select>
         </div>
 
         <div class="thumbnails">
+            <!--bwm map-->
+            <a href="https://dravenbc.github.io/bwm-map/" target="_blank" class="thumbnail" data-tags="GIS Python Leaflet PostgreSQL/PostGIS">
+                <div class="thumbnail-container">
+                    <img src="images/gas-station.png" alt="Weights and Measures">
+                    <div class="overlay-text">Weights and Measures</div> 
+                </div>
+                <div class="thumbnail-caption">Leaflet web map displaying Bureau of Weights & Measures inspections. Accesses a PostgreSQL/PostGIS database via custom API.</div>
+            </a>
+
             <!--food reporter-->
             <a href="https://dravenbc.github.io/food-reporter" target="_blank" class="thumbnail" data-tags="GIS Python Leaflet">
                 <div class="thumbnail-container">
                     <img src="images/food-reporter-bug.png" alt="Food Reporter">
                     <div class="overlay-text">Food Reporter</div> 
                 </div>
-                <div class="thumbnail-caption">A web map displaying Allegheny County, PA food inspection violations. Updated daily via a Python script.</div>
+                <div class="thumbnail-caption">Leaflet web map displaying Allegheny County, PA food inspection violations. Updated daily via a Python script.</div>
             </a>
 
             <!--street ownership map-->
@@ -45,7 +55,7 @@
                     <img src="images/street-owner.png" alt="Street Ownership Map">
                     <div class="overlay-text">Street Ownership Map</div>
                 </div>
-                <div class="thumbnail-caption">A web map showing the owner of each street in Pittsburgh.</div>
+                <div class="thumbnail-caption">ArcGIS web map showing the owner of each street in Pittsburgh.</div>
             </a>
 
             <!--submarine map-->
@@ -54,17 +64,27 @@
                     <img src="images/SubsMap.jpg" alt="Nuclear Submarine Sinkings Map">
                     <div class="overlay-text">Nuclear Submarine Sinkings Map</div>
                 </div>
-                <div class="thumbnail-caption">A web map showing the locations of nuclear submarine sinkings around the world. Fully open source.</div>
+                <div class="thumbnail-caption">Web map of nuclear submarine sinkings around the world. Hosted on AWS S3.</div>
             </a>
 
             <!--solar suitability map-->
-            <a href="pdfs/solar-suit.pdf" target="_blank" class="thumbnail" data-tags="GIS">
+            <a href="pdfs/solar-suit.pdf" target="_blank" class="thumbnail" data-tags="GIS ArcGIS">
                 <div class="thumbnail-container">
                     <img src="images/solar-suit.jpg" alt="Solar Suitability Map">
                     <div class="overlay-text">Solar Suitability Map</div>
                 </div>
                 <div class="thumbnail-caption">3rd Place map gallery winner at CMU GIS Day 2025. A static map showing the results of a solar energy suitability analysis.</div>
             </a>
+
+            <!--parcel watcher-->
+            <a href="https://dravenbc.github.io/parcel-watcher/" target="_blank" class="thumbnail" data-tags="GIS Python">
+                <div class="thumbnail-container">
+                    <img src="images/business-chart.png" alt="Parcel Watcher">
+                    <div class="overlay-text">Parcel Watcher</div>
+                </div>
+                <div class="thumbnail-caption">Tracks changes in the number of parcels in Allegheny County, PA's parcel dataset.</div>
+            </a>
+
         </div>
     </section>
 
